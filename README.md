@@ -1,1 +1,1 @@
-# michael.inyanabi-daily-reports
+This repository contains the daily reports for the python course.
