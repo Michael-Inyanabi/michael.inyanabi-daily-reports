@@ -1,0 +1,1762 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "demonstrated-bracket",
+   "metadata": {},
+   "source": [
+    "### Exercise 1:\n",
+    "Create a NumPy array of integers from 1 to 10.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "loved-mauritius",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "disturbed-confirmation",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10])"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x=np.arange(1,11,1)\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "provincial-quantity",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "understood-stick",
+   "metadata": {},
+   "source": [
+    "### Exercise 2:\n",
+    "Create a 3x3 NumPy array filled with zeros.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "wrapped-accountability",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dtype('int16')"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.zeros((3,3), dtype=np.int16)\n",
+    "a\n",
+    "a.dtype"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "little-episode",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "patent-bridges",
+   "metadata": {},
+   "source": [
+    "### Exercise 3:\n",
+    "Create a NumPy array of 10 evenly spaced numbers between 0 and 5.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "respected-parcel",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([0. , 0.5, 1. , 1.5, 2. , 2.5, 3. , 3.5, 4. , 4.5])"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "c = np.linspace(0, 5, 10, endpoint=False)\n",
+    "c"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "terminal-judgment",
+   "metadata": {},
+   "source": [
+    "### Exercise 4:\n",
+    "Create a 5x5 identity matrix using NumPy.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "turned-narrative",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[1, 0, 0, 0, 0],\n",
+       "       [0, 1, 0, 0, 0],\n",
+       "       [0, 0, 1, 0, 0],\n",
+       "       [0, 0, 0, 1, 0],\n",
+       "       [0, 0, 0, 0, 1]])"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\n",
+    "c = np.eye(5,5, dtype=int)\n",
+    "c"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "growing-powder",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "super-colorado",
+   "metadata": {},
+   "source": [
+    "### Exercise 5:\n",
+    "Create a 4x4 matrix with random values between 0 and 1.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "endangered-window",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[0.64674909, 0.44624617, 0.90668109, 0.09166747],\n",
+       "       [0.94449301, 0.43198264, 0.28075931, 0.82387271],\n",
+       "       [0.92462187, 0.99950719, 0.47559308, 0.52056428],\n",
+       "       [0.90236395, 0.40710298, 0.37509493, 0.89693443]])"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d = np.random.rand(4,4)\n",
+    "d"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "taken-upper",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "np.random.seed(0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "communist-belle",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[0.5488135 , 0.71518937, 0.60276338, 0.54488318],\n",
+       "       [0.4236548 , 0.64589411, 0.43758721, 0.891773  ],\n",
+       "       [0.96366276, 0.38344152, 0.79172504, 0.52889492],\n",
+       "       [0.56804456, 0.92559664, 0.07103606, 0.0871293 ]])"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d = np.random.rand(4,4)\n",
+    "d"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "united-landing",
+   "metadata": {},
+   "source": [
+    "### Exercise 6:\n",
+    "Find the shape of a NumPy array.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "electrical-soviet",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(10,)"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.arange(10)\n",
+    "np.shape(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "european-hours",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "transparent-virginia",
+   "metadata": {},
+   "source": [
+    "### Exercise 7:\n",
+    "Reshape a 1D NumPy array of 16 elements into a 4x4 matrix.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "technological-apparatus",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 0,  1,  2,  3],\n",
+       "       [ 4,  5,  6,  7],\n",
+       "       [ 8,  9, 10, 11],\n",
+       "       [12, 13, 14, 15]])"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.arange(16)\n",
+    "a.reshape(4,4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "inner-access",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cooked-lodging",
+   "metadata": {},
+   "source": [
+    "### Exercise 8:\n",
+    "Find the data type of the elements in a NumPy array."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "million-pontiac",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dtype('int64')"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.arange(16)\n",
+    "a.dtype"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "australian-timothy",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "innovative-mainland",
+   "metadata": {},
+   "source": [
+    "### Exercise 9:\n",
+    "Create a NumPy array of integers from 1 to 100 and find all even numbers in the array."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "clinical-british",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([  2,   4,   6,   8,  10,  12,  14,  16,  18,  20,  22,  24,  26,\n",
+       "        28,  30,  32,  34,  36,  38,  40,  42,  44,  46,  48,  50,  52,\n",
+       "        54,  56,  58,  60,  62,  64,  66,  68,  70,  72,  74,  76,  78,\n",
+       "        80,  82,  84,  86,  88,  90,  92,  94,  96,  98, 100])"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.arange(2,101,2)\n",
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "temporal-european",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "looking-sponsorship",
+   "metadata": {},
+   "source": [
+    "### Exercise 10:\n",
+    "Generate a 6x6 matrix of random integers between 10 and 50.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "entitled-import",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[26, 15, 25, 10, 28, 45],\n",
+       "       [34, 39, 29, 29, 24, 49],\n",
+       "       [42, 11, 19, 42, 41, 20],\n",
+       "       [33, 45, 21, 38, 44, 10],\n",
+       "       [10, 46, 15, 48, 27, 25],\n",
+       "       [14, 41, 11, 11, 49, 45]])"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "b = np.random.randint(10,50,(6,6))\n",
+    "b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "satisfactory-parcel",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "copyrighted-ground",
+   "metadata": {},
+   "source": [
+    "### Exercise 11:\n",
+    "Slice a 2D NumPy array to extract a submatrix."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "boring-charity",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 0,  1,  2,  3],\n",
+       "       [ 4,  5,  6,  7],\n",
+       "       [ 8,  9, 10, 11]])"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.arange(16)\n",
+    "b = a.reshape(4,4)\n",
+    "b\n",
+    "c = b[:3, 0:]\n",
+    "c"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "academic-assessment",
+   "metadata": {},
+   "source": [
+    "### Exercise 12:\n",
+    "Calculate the sum of all elements in a NumPy array."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "reported-indie",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15]\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "120"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.arange(16)\n",
+    "print(a)\n",
+    "np.sum(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "limited-forum",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "affected-surveillance",
+   "metadata": {},
+   "source": [
+    "### Exercise 13:\n",
+    "Calculate the mean, median, and standard deviation of a NumPy array.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "higher-supervisor",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15]\n",
+      "7.5\n",
+      "7.5\n",
+      "4.6097722286464435\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = np.arange(16)\n",
+    "print(a)\n",
+    "mean = np.mean(a)\n",
+    "print(mean)\n",
+    "median = np.median(a)\n",
+    "print(median)\n",
+    "sta_devia = np.std(a)\n",
+    "print(sta_devia)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "shaped-meditation",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "written-directive",
+   "metadata": {},
+   "source": [
+    "### Exercise 14:\n",
+    "Find the maximum and minimum values in a NumPy array.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "digital-raising",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15]\n",
+      "The maximum number is  15\n",
+      "The minimum number is  0\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = np.arange(16)\n",
+    "print(a)\n",
+    "maximum = np.amax(a)\n",
+    "print(\"The maximum number is \", maximum)\n",
+    "minimum = np.amin(a)\n",
+    "print(\"The minimum number is \", minimum)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "social-moisture",
+   "metadata": {},
+   "source": [
+    "### Exercise 15:\n",
+    "Create a NumPy array of 20 random integers and find the index of the maximum value.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "critical-welsh",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[11 46 82 91  0 14 99 53 12 42 84 75 68  6 68 47  3 76 52 78]\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "6"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "b = np.random.randint(0,100,20)\n",
+    "print(b)\n",
+    "np.argmax(b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "loved-trial",
+   "metadata": {},
+   "source": [
+    "### Exercise 16:\n",
+    "Create a NumPy array and reverse its elements.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "finite-virgin",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([15, 14, 13, 12, 11, 10,  9,  8,  7,  6,  5,  4,  3,  2,  1,  0])"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.arange(16)\n",
+    "a[::-1]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "several-psychiatry",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "unable-israel",
+   "metadata": {},
+   "source": [
+    "### Exercise 17:\n",
+    "Create a 3x3 matrix and multiply it element-wise by another 3x3 matrix.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "integral-private",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 5  4  8]\n",
+      " [ 6  6  1]\n",
+      " [ 2  6 10]]\n",
+      "=====================\n",
+      "\n",
+      "[[4 1 6]\n",
+      " [1 2 3]\n",
+      " [5 3 1]]\n",
+      "=====================\n",
+      "\n",
+      "[[20  4 48]\n",
+      " [ 6 12  3]\n",
+      " [10 18 10]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "x=np.random.randint(1,11,(3,3))\n",
+    "print(x)\n",
+    "print(\"=====================\\n\")\n",
+    "y = np.random.randint(1,11,(3,3))\n",
+    "print(y)\n",
+    "print(\"=====================\\n\")\n",
+    "elem_prod = x*y\n",
+    "print(elem_prod)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "facial-starter",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "voluntary-determination",
+   "metadata": {},
+   "source": [
+    "### Exercise 18:\n",
+    "Create a diagonal matrix from a given 1D array.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "threatened-maker",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0],\n",
+       "       [ 0,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0],\n",
+       "       [ 0,  0,  2,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0],\n",
+       "       [ 0,  0,  0,  3,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0],\n",
+       "       [ 0,  0,  0,  0,  4,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0],\n",
+       "       [ 0,  0,  0,  0,  0,  5,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0],\n",
+       "       [ 0,  0,  0,  0,  0,  0,  6,  0,  0,  0,  0,  0,  0,  0,  0,  0],\n",
+       "       [ 0,  0,  0,  0,  0,  0,  0,  7,  0,  0,  0,  0,  0,  0,  0,  0],\n",
+       "       [ 0,  0,  0,  0,  0,  0,  0,  0,  8,  0,  0,  0,  0,  0,  0,  0],\n",
+       "       [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  9,  0,  0,  0,  0,  0,  0],\n",
+       "       [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0, 10,  0,  0,  0,  0,  0],\n",
+       "       [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, 11,  0,  0,  0,  0],\n",
+       "       [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, 12,  0,  0,  0],\n",
+       "       [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, 13,  0,  0],\n",
+       "       [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, 14,  0],\n",
+       "       [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, 15]])"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.arange(16)\n",
+    "np.diag(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "included-psychology",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "obvious-joining",
+   "metadata": {},
+   "source": [
+    "### Exercise 19:\n",
+    "Perform matrix multiplication on two 2D NumPy arrays."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "successful-violin",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 28,  57,  23],\n",
+       "       [ 88, 154,  62],\n",
+       "       [ 47,  62,  28]])"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x=np.random.randint(1,11,(3,3))\n",
+    "y = np.random.randint(1,11,(3,3))\n",
+    "np.dot(x,y)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "extreme-music",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "adjacent-malaysia",
+   "metadata": {},
+   "source": [
+    "### Exercise 20:\n",
+    "Flatten a 2D NumPy array into a 1D array."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "suffering-rouge",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[1, 2, 3],\n",
+       "       [2, 4, 5],\n",
+       "       [1, 2, 3]])"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "c =  np.array([[1, 2, 3], [2, 4, 5], [1, 2, 3]])\n",
+    "c"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "veterinary-cigarette",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "opening-handy",
+   "metadata": {},
+   "source": [
+    "### Exercise 21:\n",
+    "Stack two NumPy arrays vertically."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "ruled-embassy",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1 2 3]\n",
+      "[4 5 6]\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "array([[1, 2, 3],\n",
+       "       [4, 5, 6]])"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.array([1,2,3])\n",
+    "print(a)\n",
+    "b = np.array([4,5,6])\n",
+    "print(b)\n",
+    "\n",
+    "np.vstack((a,b))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "thick-donna",
+   "metadata": {},
+   "source": [
+    "### Exercise 22:\n",
+    "Stack two NumPy arrays horizontally.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "known-madison",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = np.array([1,2,3])\n",
+    "print(a)\n",
+    "b = np.array([4,5,6])\n",
+    "print(b)\n",
+    "np.hstack((a,b))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "eight-symbol",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "royal-enemy",
+   "metadata": {},
+   "source": [
+    "### Exercise 23:\n",
+    "Split a NumPy array into multiple sub-arrays.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "together-basement",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[array([[1, 2, 3]]),\n",
+       " array([[2, 4, 5]]),\n",
+       " array([[1, 2, 3]]),\n",
+       " array([[5, 6, 7]])]"
+      ]
+     },
+     "execution_count": 48,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "c =  np.array([[1, 2, 3], [2, 4, 5], [1, 2, 3],[5,6,7]])\n",
+    "np.split(c,4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "minus-lottery",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "aging-dragon",
+   "metadata": {},
+   "source": [
+    "### Exercise 24:\n",
+    "Generate a random NumPy array and round each element to two decimal places."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "polish-worker",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([0.68, 0.86, 0.75, 0.96, 0.55, 0.21, 0.22, 0.22, 0.57, 0.45, 0.97,\n",
+       "       0.68, 0.09, 0.06, 0.49, 0.88, 0.98, 0.62, 0.54, 0.85])"
+      ]
+     },
+     "execution_count": 55,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x =np.random.rand(20)\n",
+    "x.round(2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "southeast-adelaide",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "collected-challenge",
+   "metadata": {},
+   "source": [
+    "### Exercise 25:\n",
+    "Find the unique elements of a NumPy array.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "thrown-costa",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([0, 1, 2, 3, 4, 5, 6, 7])"
+      ]
+     },
+     "execution_count": 58,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "c =  np.array([[1, 2, 3], [2, 4, 5], [0, 2, 3],[5,6,7]])\n",
+    "np.unique(c)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "adjusted-education",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "unknown-mileage",
+   "metadata": {},
+   "source": [
+    "\n",
+    "### Exercise 26:\n",
+    "Replace all elements in a NumPy array that are less than a specific value with that value.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "delayed-click",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([5, 5, 5, 8, 9, 6, 5, 5, 7])"
+      ]
+     },
+     "execution_count": 61,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.array([1,2,3,8,9,6,4,3,7])\n",
+    "a[a < 5] = 5\n",
+    "a\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "overhead-notice",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "exceptional-understanding",
+   "metadata": {},
+   "source": [
+    "### Exercise 27:\n",
+    "Find the cumulative sum of the elements in a NumPy array.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "painted-representative",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([ 1,  3,  6, 14, 23, 29, 33, 36, 43])"
+      ]
+     },
+     "execution_count": 62,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.array([1,2,3,8,9,6,4,3,7])\n",
+    "np.cumsum(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "logical-alexander",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "later-chest",
+   "metadata": {},
+   "source": [
+    "### Exercise 28:\n",
+    "Create a NumPy array and find the number of non-zero elements in it.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "scheduled-philadelphia",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "6"
+      ]
+     },
+     "execution_count": 74,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x = np.array([-2,-3,2,8,9,0,8])\n",
+    "np.count_nonzero(x)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "flush-angle",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "sporting-notion",
+   "metadata": {},
+   "source": [
+    "### Exercise 29:\n",
+    "Create a NumPy array of random integers and sort it in ascending order.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "id": "thermal-assist",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([0.00924007, 0.03045296, 0.04561464, 0.06303829, 0.09259617,\n",
+       "       0.12483306, 0.16495887, 0.20486576, 0.20915703, 0.21745049,\n",
+       "       0.28691504, 0.4631502 , 0.55564924, 0.67726331, 0.72208066,\n",
+       "       0.73169376, 0.74699424, 0.74925442, 0.8330381 , 0.84042853])"
+      ]
+     },
+     "execution_count": 78,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x = np.random.rand(20)\n",
+    "np.sort(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "suited-joyce",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "stainless-quarterly",
+   "metadata": {},
+   "source": [
+    "### Exercise 30:\n",
+    "Find the row-wise and column-wise sum of a 3x3 matrix."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "id": "purple-arena",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "30"
+      ]
+     },
+     "execution_count": 87,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.array([[3,3,2],[2,3,6],[4,5,2]])\n",
+    "np.sum(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "noble-paradise",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "republican-george",
+   "metadata": {},
+   "source": [
+    "### Exercise 31:\n",
+    "Generate a 2D NumPy array with random values and normalize it (scale the values between 0 and 1).\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 111,
+   "id": "activated-religious",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[1.        , 0.60703383, 0.59551571],\n",
+       "       [0.76496928, 0.63456671, 0.        ],\n",
+       "       [0.67862958, 0.91521701, 0.42594916]])"
+      ]
+     },
+     "execution_count": 111,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "from sklearn.preprocessing import normalize\n",
+    "a = np.random.rand(3, 3) \n",
+    "min_val = np.min(a)\n",
+    "max_val = np.max(a)\n",
+    "normalized_a = (a - min_val) / (max_val - min_val)\n",
+    "normalized_a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "critical-electricity",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "thousand-optimum",
+   "metadata": {},
+   "source": [
+    "### Exercise 32:\n",
+    "Create two NumPy arrays and find the dot product.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 114,
+   "id": "weird-education",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[3 3]\n",
+      " [2 3]]\n",
+      "[[2 5 4]\n",
+      " [4 6 7]]\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "array([[18, 33, 33],\n",
+       "       [16, 28, 29]])"
+      ]
+     },
+     "execution_count": 114,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.array([[3,3],[2,3]])\n",
+    "b = np.array([[2,5,4],[4,6,7]])\n",
+    "print(a)\n",
+    "print(b)\n",
+    "np.dot(a,b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bound-belarus",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "operational-village",
+   "metadata": {},
+   "source": [
+    "### Exercise 33:\n",
+    "Find the trace of a square NumPy matrix.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 119,
+   "id": "prescribed-trust",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "8"
+      ]
+     },
+     "execution_count": 119,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.array([[3,3,2],[2,3,6],[4,5,2]])\n",
+    "a.trace()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "mounted-force",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "biblical-tiffany",
+   "metadata": {},
+   "source": [
+    "### Exercise 34:\n",
+    "Create a 2D array and swap two rows.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 124,
+   "id": "hybrid-preserve",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[3 3 2]\n",
+      " [2 3 6]\n",
+      " [4 5 2]]\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "array([[2, 3, 6],\n",
+       "       [4, 5, 2],\n",
+       "       [3, 3, 2]])"
+      ]
+     },
+     "execution_count": 124,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.array([[3,3,2],[2,3,6],[4,5,2]])\n",
+    "print(a)\n",
+    "\n",
+    "num_arr = np.roll(a,2,axis=0)\n",
+    "num_arr"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ongoing-engineer",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "outside-aluminum",
+   "metadata": {},
+   "source": [
+    "### Exercise 35:\n",
+    "Create a 1D NumPy array and convert it into a column vector.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 139,
+   "id": "forbidden-cooperation",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1]\n",
+      " [2]\n",
+      " [3]\n",
+      " [8]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = np.array([1,2,3,8])\n",
+    "column_vector = a[:, None]\n",
+    "print(column_vector)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "flying-eleven",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "every-necklace",
+   "metadata": {},
+   "source": [
+    "### Exercise 36:\n",
+    "Find the determinant of a 3x3 matrix."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 138,
+   "id": "protected-zealand",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "-15.999999999999998\n"
+     ]
+    }
+   ],
+   "source": [
+    "import math\n",
+    "a = np.array([[3,3,2],[2,3,6],[4,5,2]])\n",
+    "determinant = np.linalg.det(a)\n",
+    "print(determinant)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cardiac-substance",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "animal-perry",
+   "metadata": {},
+   "source": [
+    "### Exercise 37:\n",
+    "Find the eigenvalues and eigenvectors of a 2x2 matrix."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 149,
+   "id": "alternate-aluminum",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[5.44948974 0.55051026]\n",
+      "===============\n",
+      "\n",
+      "[[ 0.77459667 -0.77459667]\n",
+      " [ 0.63245553  0.63245553]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = np.array([[3,3],[2,3]])\n",
+    "eigenvalues, eigenvectors = np.lnalg.eig(a)\n",
+    "\n",
+    "print(eigenvalues)\n",
+    "print(\"===============\\n\")\n",
+    "print(eigenvectors)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "appointed-buffalo",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "banned-plastic",
+   "metadata": {},
+   "source": [
+    "### Exercise 38:\n",
+    "Solve a system of linear equations using NumPy.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 150,
+   "id": "improving-security",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([-3.        ,  3.66666667])"
+      ]
+     },
+     "execution_count": 150,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.array([[3,3],[2,3]])\n",
+    "b = np.array([2,5])\n",
+    "np.linalg.solve(a,b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "christian-bolivia",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "auburn-explorer",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "### Exercise 39:\n",
+    "Add Gaussian noise to a NumPy array."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 159,
+   "id": "accurate-memphis",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([ 5.33167231,  6.71182437, -3.08473228, -0.61431413,  1.6625931 ,\n",
+       "        8.27630166,  1.47314993,  6.72880362, -0.55482016,  2.47166131,\n",
+       "        5.9264985 ,  5.67919543, -0.78324087, -0.31839148,  3.13189184,\n",
+       "        7.60998629, -1.57480609,  5.69408765,  5.3359025 ,  6.83811823,\n",
+       "        6.76956506,  7.48252594,  7.3769934 ,  8.44414729,  0.91179414,\n",
+       "        7.79047695,  7.44245825,  3.86176588,  4.5433202 ,  0.41936787,\n",
+       "        4.98653159,  3.61439333,  6.41394015, -1.60812648,  6.6599238 ,\n",
+       "        5.133435  ,  3.48199913, -0.85348729, -2.10845943,  2.77335769,\n",
+       "       -1.79497456,  5.39513305,  7.74621142,  6.22582973,  0.30404918,\n",
+       "       -1.89055995, -3.49337154,  4.41479278, -1.58195038,  5.27492565,\n",
+       "        3.74539186,  2.37450187,  5.63005617,  7.93893105, -1.74505105,\n",
+       "        2.65888347,  0.260621  , -2.7147394 , -3.29634924,  3.66513804,\n",
+       "       -2.0703081 , -3.3566901 , -1.31630678,  2.08152503,  2.50279472,\n",
+       "        7.49425214,  1.43481782, -2.57096138, -1.01888808,  7.40127577,\n",
+       "        3.97292872,  0.27931671,  6.9397238 ,  0.44935069,  7.48915977,\n",
+       "       -2.22291713,  7.94150764,  7.27872955,  1.08190958, -3.57765848,\n",
+       "        0.38658855, -1.73853167, -0.13831391,  3.84043184,  1.8440719 ,\n",
+       "        5.81849559,  3.76952823,  0.17595271,  0.17789967,  6.13837727,\n",
+       "        3.25567379, -1.7980335 ,  3.9816481 , -1.60094044,  6.934785  ,\n",
+       "       -2.31003064,  4.13665779,  7.08133951, -2.46683214,  3.1835113 ,\n",
+       "        8.00068823, -0.14386238,  0.36999489,  2.27458469,  7.95558143,\n",
+       "        6.44043124, -0.59371985, -0.36014593, -1.35089046,  1.44840089,\n",
+       "        6.37201903, -2.05121207,  3.58414911,  2.63759251,  4.38267641,\n",
+       "        1.09579428,  6.01761327,  0.2016481 ,  4.82073204,  8.4962226 ,\n",
+       "        3.06675034,  4.18772377,  3.04768901,  2.76279711, -1.86740717,\n",
+       "        4.77839272,  3.4065797 ,  3.40667648, -0.11858386,  0.96060216,\n",
+       "        2.19677031,  4.73501159,  5.3612615 ,  0.3959593 ,  3.97490406,\n",
+       "        1.39659699,  2.68128999, -2.40626805,  3.08076046,  7.12606628,\n",
+       "        8.40241847,  0.13715981, -1.85932334,  7.75064959,  6.1829449 ,\n",
+       "       -0.16669193, -3.04339309,  0.14160592,  7.72399928,  2.55765461,\n",
+       "       -0.10355224,  0.36231997, -0.65275018,  3.69632349, -1.25888513,\n",
+       "        4.60144046,  1.71020194, -1.78965424,  8.57308441,  0.87549146,\n",
+       "        0.9724425 ,  1.86720671, -0.59801822,  8.54313298,  1.52016192,\n",
+       "        3.55574279,  0.94357136,  2.23527167,  7.06294575, -1.09916752,\n",
+       "        6.25017877,  1.92257931, -0.42908072,  4.43947525, -1.02256346,\n",
+       "       -1.8362161 ,  0.59595792, -0.2026846 ,  5.74970212,  5.29337508,\n",
+       "       -2.08497173,  5.76076082, -0.91797785, -0.44094082,  4.87649685,\n",
+       "        6.99926189,  4.01226705,  7.99293968,  4.78237844,  6.37008661,\n",
+       "        3.21284975,  7.49883404, -1.73309267,  1.28794834, -0.23770162,\n",
+       "       -1.50511568, -1.43379193,  1.54361772,  2.16451775,  7.41915946])"
+      ]
+     },
+     "execution_count": 159,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x = np.random.rand(200)\n",
+    "y = 12 * x - 4 + np.random.rand(200)\n",
+    "y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "detailed-commerce",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "round-arcade",
+   "metadata": {},
+   "source": [
+    "### Exercise 40:\n",
+    "Create a 4x4 matrix and extract the diagonal elements.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 165,
+   "id": "documentary-bridal",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([3, 3, 2, 8])"
+      ]
+     },
+     "execution_count": 165,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = np.array([[3,3,2,3],[2,3,6,5],[4,5,2,9],[5,6,7,8]])\n",
+    "a.diagonal()"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
